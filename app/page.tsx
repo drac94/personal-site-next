@@ -59,6 +59,13 @@ interface ContributionDay {
   count: number;
 }
 
+interface GitHubContribution {
+  total: {
+    lastYear: number;
+  };
+  contributions: ContributionDay[];
+}
+
 async function getGitHubProjects(): Promise<GitHubRepo[]> {
   const res = await fetch(
     "https://api.github.com/users/drac94/repos?sort=updated&per_page=4",
@@ -78,13 +85,13 @@ async function getMediumPosts(): Promise<MediumPost[]> {
   return data.items.slice(0, 3);
 }
 
-async function getGitHubContributions(): Promise<ContributionDay[]> {
+async function getGitHubContributions(): Promise<GitHubContribution> {
   const res = await fetch(
     "https://github-contributions-api.jogruber.de/v4/drac94?y=last"
   );
   if (!res.ok) throw new Error("Failed to fetch GitHub contributions");
   const data = await res.json();
-  return data.contributions;
+  return data;
 }
 
 function getContributionColor(count: number): string {
@@ -103,8 +110,8 @@ export default async function PersonalWebsite() {
 
   // Organize contributions into weeks
   const weeks = [];
-  for (let i = 0; i < contributions.length; i += 7) {
-    weeks.push(contributions.slice(i, i + 7));
+  for (let i = 0; i < contributions.contributions.length; i += 7) {
+    weeks.push(contributions.contributions.slice(i, i + 7));
   }
 
   return (
@@ -212,6 +219,9 @@ export default async function PersonalWebsite() {
               <Card>
                 <CardHeader>
                   <CardTitle>{`Last Year's Contributions`}</CardTitle>
+                  <CardDescription>
+                    {`Total: ${contributions.total.lastYear} contributions`}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="w-full overflow-x-auto">
