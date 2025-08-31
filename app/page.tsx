@@ -1,6 +1,6 @@
 import {
   SiGithub,
-  SiLinkedin,
+  SiLinkerd,
   SiMedium,
   SiBluesky,
   SiReact,
@@ -132,7 +132,7 @@ export default async function PersonalWebsite() {
               href="https://linkedin.com/in/ludwiguer"
               className="text-white hover:text-gray-200"
             >
-              <SiLinkedin className="h-6 w-6" />
+              <SiLinkerd className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
@@ -326,7 +326,7 @@ export default async function PersonalWebsite() {
                 href="https://linkedin.com/in/ludwiguer"
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100"
               >
-                <SiLinkedin className="h-6 w-6" />
+                <SiLinkerd className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
