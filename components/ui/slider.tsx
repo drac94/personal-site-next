@@ -74,21 +74,21 @@ export function Slider({
             "[&::-webkit-slider-thumb]:bg-white",
             "[&::-webkit-slider-thumb]:transition-[box-shadow,background] [&::-webkit-slider-thumb]:duration-300",
             // default shadow
-            "[&::-webkit-slider-thumb]:shadow-[0_6px_13px_0_rgba(0,0,0,0.12),_0_0.5px_4px_0_rgba(0,0,0,0.12)]",
+            "[&::-webkit-slider-thumb]:shadow-[0_6px_13px_0_rgba(0,0,0,0.12),0_0.5px_4px_0_rgba(0,0,0,0.12)]",
             // hover shadow
-            "[&::-webkit-slider-thumb:hover]:shadow-[0_6px_13px_0_rgba(0,0,0,0.24),_0_0.5px_4px_0_rgba(0,0,0,0.24)]",
+            "[&::-webkit-slider-thumb:hover]:shadow-[0_6px_13px_0_rgba(0,0,0,0.24),0_0.5px_4px_0_rgba(0,0,0,0.24)]",
             // webkit track
             "[&::-webkit-slider-runnable-track]:appearance-none",
             "[&::-webkit-slider-runnable-track]:bg-transparent",
             // moz thumb
             "[&::-moz-range-thumb]:h-7 [&::-moz-range-thumb]:w-7 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-white",
-            "[&::-moz-range-thumb]:shadow-[0_6px_13px_0_rgba(0,0,0,0.12),_0_0.5px_4px_0_rgba(0,0,0,0.12)]",
-            "[&::-moz-range-thumb:hover]:shadow-[0_6px_13px_0_rgba(0,0,0,0.24),_0_0.5px_4px_0_rgba(0,0,0,0.24)]",
+            "[&::-moz-range-thumb]:shadow-[0_6px_13px_0_rgba(0,0,0,0.12),0_0.5px_4px_0_rgba(0,0,0,0.12)]",
+            "[&::-moz-range-thumb:hover]:shadow-[0_6px_13px_0_rgba(0,0,0,0.24),0_0.5px_4px_0_rgba(0,0,0,0.24)]",
             "[&::-moz-range-track]:bg-transparent",
             // ms thumb/track (legacy)
             "[&::-ms-thumb]:h-7 [&::-ms-thumb]:w-7 [&::-ms-thumb]:rounded-full [&::-ms-thumb]:bg-white",
-            "[&::-ms-thumb]:shadow-[0_6px_13px_0_rgba(0,0,0,0.12),_0_0.5px_4px_0_rgba(0,0,0,0.12)]",
-            "[&::-ms-thumb:hover]:shadow-[0_6px_13px_0_rgba(0,0,0,0.24),_0_0.5px_4px_0_rgba(0,0,0,0.24)]",
+            "[&::-ms-thumb]:shadow-[0_6px_13px_0_rgba(0,0,0,0.12),0_0.5px_4px_0_rgba(0,0,0,0.12)]",
+            "[&::-ms-thumb:hover]:shadow-[0_6px_13px_0_rgba(0,0,0,0.24),0_0.5px_4px_0_rgba(0,0,0,0.24)]",
             "[&::-ms-track]:bg-transparent",
             // focus
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/40",

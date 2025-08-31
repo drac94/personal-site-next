@@ -116,7 +116,7 @@ export default async function PersonalWebsite() {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      <header className="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow">
+      <header className="bg-linear-to-r from-blue-500 to-purple-600 text-white shadow">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-2">Luis Guerrero</h1>
           <p className="text-xl">Software Engineer</p>
@@ -397,7 +397,7 @@ function ProjectCard({
         </CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent className="grow">
         <div className="flex flex-wrap gap-2 mb-4">
           {topics.map((topic) => (
             <Badge key={topic} variant="secondary">
@@ -443,7 +443,7 @@ function BlogPostCard({
           <Link href={url}>{title}</Link>
         </CardTitle>
       </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent className="grow">
         <div className="flex flex-wrap gap-2 mb-4">
           {categories.map((category) => (
             <Badge key={category} variant="outline">
