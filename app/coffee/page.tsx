@@ -19,7 +19,7 @@ import {
 import { calculatePourGridColumns, calculatePours } from "./utils";
 import Link from "next/link";
 
-const FourSix = (): JSX.Element => {
+export default function FourSix() {
   const [quantities, dispatch] = React.useReducer(
     quantitiesReducer,
     initialQuantities
@@ -189,6 +189,4 @@ const FourSix = (): JSX.Element => {
       </div>
     </div>
   );
-};
-
-export default FourSix;
+}
