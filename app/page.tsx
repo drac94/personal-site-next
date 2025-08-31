@@ -1,6 +1,5 @@
 import {
   SiGithub,
-  SiLinkerd,
   SiMedium,
   SiBluesky,
   SiReact,
@@ -129,13 +128,6 @@ export default async function PersonalWebsite() {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="https://linkedin.com/in/ludwiguer"
-              className="text-white hover:text-gray-200"
-            >
-              <SiLinkerd className="h-6 w-6" />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link
               href="https://ludwiguer.medium.com/"
               className="text-white hover:text-gray-200"
             >
@@ -157,11 +149,20 @@ export default async function PersonalWebsite() {
         <div className="px-4 py-6 sm:px-0">
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-            <p className="text-lg">
-              {`I'm a passionate software engineer specializing in modern web
-              technologies. With a strong foundation in JavaScript and
-              TypeScript, I create robust and efficient applications using React
-              and Next.js.`}
+            <p className="text-lg leading-relaxed text-slate-800 dark:text-slate-100">
+              I’m a <strong>Product Engineer</strong> with product management
+              experience who{" "}
+              <strong>
+                shapes ambiguous problems into clear, useful products
+              </strong>{" "}
+              🎯. I solve user problems end to end and act as an enabler more
+              than a coder, leveling up <strong>DX</strong> with reusable{" "}
+              <strong>abstractions</strong> and strong{" "}
+              <strong>design systems</strong> 🧩. I build with{" "}
+              <strong>TypeScript</strong>, <strong>React</strong>, and{" "}
+              <strong>Next.js</strong>, crafting predictable, composable APIs
+              and components that remove friction so the right thing is easy and
+              teams ship faster 🚀.
             </p>
           </section>
 
@@ -321,13 +322,6 @@ export default async function PersonalWebsite() {
               >
                 <SiGithub className="h-6 w-6" />
                 <span className="sr-only">GitHub</span>
-              </Link>
-              <Link
-                href="https://linkedin.com/in/ludwiguer"
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100"
-              >
-                <SiLinkerd className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
                 href="https://ludwiguer.medium.com/"
