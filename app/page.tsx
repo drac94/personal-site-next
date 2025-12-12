@@ -27,6 +27,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 interface GitHubRepo {
   id: number;
@@ -116,7 +117,10 @@ export default async function PersonalWebsite() {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       <header className="bg-linear-to-r from-blue-500 to-purple-600 text-white shadow">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
+          <div className="absolute top-4 right-4">
+            <ThemeToggle />
+          </div>
           <h1 className="text-4xl font-bold mb-2">Luis Guerrero</h1>
           <p className="text-xl">Software Engineer</p>
           <div className="mt-4 flex space-x-4">
